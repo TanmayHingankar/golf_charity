@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { db } from "@workspace/db";
-import { subscriptionsTable, usersTable, donationsTable, charitiesTable } from "@workspace/db";
+import { db } from "../lib/db";
+import { subscriptionsTable, usersTable, donationsTable, charitiesTable } from "../lib/db";
 import { eq, desc, sql } from "drizzle-orm";
 import { authenticate, requireAdmin, type AuthRequest } from "../middlewares/authenticate.js";
-import { SUBSCRIPTION_PRICES, PRIZE_POOL_PERCENTAGE } from "@workspace/db";
+import { SUBSCRIPTION_PRICES, PRIZE_POOL_PERCENTAGE } from "../lib/db";
 import Stripe from "stripe";
 
 const router = Router();

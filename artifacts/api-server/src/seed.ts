@@ -1,5 +1,5 @@
-import { db, pool } from "@workspace/db";
-import { usersTable, charitiesTable, charityEventsTable } from "@workspace/db";
+import { db, pool } from "./lib/db";
+import { usersTable, charitiesTable, charityEventsTable } from "./lib/db";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcryptjs";
 

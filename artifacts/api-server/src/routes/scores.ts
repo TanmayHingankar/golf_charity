@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { db } from "@workspace/db";
-import { scoresTable } from "@workspace/db";
+import { db } from "../lib/db";
+import { scoresTable } from "../lib/db";
 import { eq, desc, asc } from "drizzle-orm";
 import { authenticate, requireAdmin, type AuthRequest } from "../middlewares/authenticate.js";
-import { MAX_SCORES_PER_USER } from "@workspace/db";
+import { MAX_SCORES_PER_USER } from "../lib/db";
 
 const router = Router();
 

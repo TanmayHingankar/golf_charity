@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { db } from "@workspace/db";
-import { usersTable, subscriptionsTable, drawsTable, winnersTable, charitiesTable, scoresTable, donationsTable } from "@workspace/db";
+import { db } from "../lib/db";
+import { usersTable, subscriptionsTable, drawsTable, winnersTable, charitiesTable, scoresTable, donationsTable } from "../lib/db";
 import { eq, sql, desc } from "drizzle-orm";
 import { authenticate, requireAdmin, type AuthRequest } from "../middlewares/authenticate.js";
-import { PRIZE_POOL_DISTRIBUTION } from "@workspace/db";
+import { PRIZE_POOL_DISTRIBUTION } from "../lib/db";
 
 const router = Router();
 

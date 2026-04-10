@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { db } from "@workspace/db";
-import { donationsTable, charitiesTable, usersTable } from "@workspace/db";
+import { db } from "../lib/db";
+import { donationsTable, charitiesTable, usersTable } from "../lib/db";
 import { eq, desc, sql } from "drizzle-orm";
 import { authenticate, requireAdmin, type AuthRequest } from "../middlewares/authenticate.js";
 

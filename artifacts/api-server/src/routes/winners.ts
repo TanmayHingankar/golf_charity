@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { db } from "@workspace/db";
-import { winnersTable, usersTable } from "@workspace/db";
+import { db } from "../lib/db";
+import { winnersTable, usersTable } from "../lib/db";
 import { eq, and, desc } from "drizzle-orm";
 import { authenticate, requireAdmin, type AuthRequest } from "../middlewares/authenticate.js";
 import multer from "multer";
