@@ -1,16 +1,17 @@
 import express, { type Express } from "express";
 import cors from "cors";
-import helmet from "helmet";
-import rateLimit from "express-rate-limit";
+import type { Request, Response, NextFunction } from "express";
+import * as helmet from "helmet";
+import { rateLimit } from "express-rate-limit";
 import cookieParser from "cookie-parser";
-import pinoHttp from "pino-http";
+import { pinoHttp } from "pino-http";
 import router from "./routes";
 import { logger } from "./lib/logger";
 
 const app: Express = express();
 
 // Security headers
-app.use(helmet({
+app.use(helmet.default({
   crossOriginResourcePolicy: { policy: "cross-origin" },
   contentSecurityPolicy: false,
 }));
@@ -39,14 +40,14 @@ app.use(
   pinoHttp({
     logger,
     serializers: {
-      req(req) {
+      req(req: Request) {
         return {
           id: req.id,
           method: req.method,
           url: req.url?.split("?")[0],
         };
       },
-      res(res) {
+      res(res: Response) {
         return {
           statusCode: res.statusCode,
         };
@@ -74,7 +75,7 @@ app.use((_req, res) => {
 });
 
 // Global error handler
-app.use((err: Error, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
   logger.error({ err }, "Unhandled error");
   res.status(500).json({ error: "InternalServerError", message: "An unexpected error occurred" });
 });
