@@ -1,0 +1,94 @@
+You are a Principal Software Engineer and System Architect with 15+ years experience building high-scale subscription, lottery, and charity platforms. Your task is to generate a **COMPLETE, PRODUCTION-READY MERN application** for the "Golf Charity Subscription Platform" based on the detailed PRD and technical specifications provided below.
+
+**⚠️ STRICT RULES (NEVER BREAK):**
+1. Generate **REAL, COPY-PASTE READY CODE**. No pseudo-code, no placeholders like `// TODO` or `// implement this`. Every file must be fully written and functional.
+2. Use **MERN stack only**: MongoDB + Express + React (Vite) + Node.js + Tailwind CSS + Redux Toolkit.
+3. Follow industry best practices: clean architecture, modular code, proper error handling, security, scalability.
+4. Cover **EVERY SINGLE REQUIREMENT** from the PRD below.
+5. UI/UX must be **emotion-driven, modern, premium, charitable-impact focused**. Strictly avoid traditional golf clichés (no fairways, plaid, clubs as primary theme). Use dark premium theme, glassmorphism, subtle animations (Framer Motion).
+6. Code must be clean, well-commented, structured, and ready-to-run.
+
+---
+
+## 📄 COMPLETE PRD (Full Text)
+
+```
+Digital Heroes · PRD — Golf Charity Subscription Platform SAMPLE · Selection Process Only · digitalheroes.co.in
+Product Requirements Document · Golf Charity Subscription Platform Page 1
+nn SAMPLE DOCUMENT — Issued for Selection Process Only nn
+Product Requirements Document (PRD)
+Project: Golf Charity Subscription Platform
+Issued By Digital Heroes · digitalheroes.co.in
+Document Type Product Requirements Document (PRD)
+Purpose Trainee Selection Process — Sample Assignment
+Version 1.0 · March 2026
+Audience Full-Stack Development Trainees / Applicants
+Document Summary: This PRD outlines the complete product specification for a subscription-based golf platform
+combining performance tracking, monthly prize draws, and charitable giving. It has been prepared by Digital Heroes
+as a sample assignment document for evaluating full-stack development trainees during the selection process. It
+serves as the single source of truth for design, development, and evaluation.
+01 PROJECT OVERVIEW
+The platform is a subscription-driven web application combining golf performance tracking, charity fundraising, and
+a monthly draw-based reward engine. It is designed to feel emotionally engaging and modern — deliberately
+avoiding the aesthetics of a traditional golf website.
+Users will:
+Subscribe to the platform (monthly or yearly)
+Enter their latest golf scores in Stableford format
+Participate in monthly draw-based prize pools
+Support a charity of their choice with a portion of their subscription
+02 CORE OBJECTIVES
+Subscription Engine Build a robust subscription and payment system
+Score Experience Simple, engaging score-entry flow
+Custom Draw Engine Algorithm-powered or random monthly draws
+Charity Integration Seamless charity contribution logic
+Admin Control Comprehensive admin dashboard and tools
+Outstanding UI/UX Design that stands out in the golf industry
+Digital Heroes · PRD — Golf Charity Subscription Platform SAMPLE · Selection Process Only · digitalheroes.co.in
+Product Requirements Document · Golf Charity Subscription Platform Page 2
+03 USER ROLES
+n Public Visitor
+• View platform concept
+• Explore listed charities
+• Understand draw mechanics
+• Initiate subscription
+n Registered Subscriber
+• Manage profile & settings
+• Enter / edit golf scores
+• Select charity recipient
+• View participation & winnings
+• Upload winner proof
+n Administrator
+• Manage users & subscriptions
+• Configure & run draws
+• Manage charity listings
+• Verify winners & payouts
+• Access reports & analytics
+04 SUBSCRIPTION & PAYMENT SYSTEM
+Plans Monthly plan and Yearly plan (discounted rate)
+Gateway Stripe (or equivalent PCI-compliant provider)
+Access Control Non-subscribers receive restricted access to platform features
+Lifecycle Handles renewal, cancellation, and lapsed-subscription states
+Validation Real-time subscription status check on every authenticated request
+05 SCORE MANAGEMENT SYSTEM
+Input Requirements
+Users must enter their last 5 golf scores
+Score range: 1 – 45 (Stableford format)
+Each score must include a date
+Functional Behaviour
+Only the latest 5 scores are retained at any time
+A new score replaces the oldest stored score automatically
+Scores are displayed in reverse chronological order (most recent first)
+06 DRAW & REWARD SYSTEM
+Draw Types
+5-Number Match
+4-Number Match
+3-Number Match
+Draw Logic Options
+Random generation — standard lottery-style draw
+Algorithmic — weighted by most/least frequent user scores
+Operational Requirements
+Monthly cadence — draws executed once per month
+Admin controls publishing of draw results
+Simulation / pre-analysis mode before official publish
+Jackpot rollover to next month if no 5-match winner
+Digital Heroes · PRD — Golf Charity Subscription Platform SAMPLE · Selection Process...

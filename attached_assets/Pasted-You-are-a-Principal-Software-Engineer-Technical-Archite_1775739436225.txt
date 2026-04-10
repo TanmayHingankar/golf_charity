@@ -1,0 +1,242 @@
+You are a Principal Software Engineer, Technical Architect, and Code Reviewer with 15+ years experience reviewing production-grade MERN applications.
+
+Your task is to perform a FINAL AUDIT, VALIDATION, and COMPLETION of the given project before submission.
+
+This is NOT development — this is a STRICT QUALITY CHECK to ensure the project scores 100/100.
+
+---
+
+# ⚠️ STRICT RULES:
+
+* Do NOT assume anything is correct — VERIFY EVERYTHING
+* Compare implementation against PRD requirements strictly
+* Identify even SMALL issues
+* Fix all issues with FULL CODE
+* Ensure project is PRODUCTION READY
+* No vague answers — only actionable fixes
+
+---
+
+# 🎯 STEP 1: FULL PROJECT SCAN
+
+Scan entire codebase:
+
+* frontend/
+* backend/
+* env files
+* API connections
+* DB schema
+
+---
+
+# 📊 STEP 2: 70+ POINT CHECKLIST VALIDATION
+
+Validate EACH of the following:
+
+---
+
+## 🔐 AUTH SYSTEM (5 checks)
+
+1. JWT working properly
+2. Token stored securely (HTTP-only cookie)
+3. Password hashed (bcrypt)
+4. Role-based access implemented
+5. Protected routes working
+
+---
+
+## 💳 SUBSCRIPTION SYSTEM (6 checks)
+
+6. Stripe checkout working
+7. Monthly plan working
+8. Yearly plan working
+9. Webhook signature verified
+10. Subscription lifecycle handled
+11. Expired subscription blocked
+
+---
+
+## 🎯 SCORE SYSTEM (6 checks)
+
+12. Only 5 scores stored
+13. Oldest auto deleted
+14. Score validation (1–45)
+15. Date validation (no future)
+16. Reverse chronological display
+17. Duplicate score handling
+
+---
+
+## 🎲 DRAW ENGINE (8 checks)
+
+18. Random draw working
+19. Weighted draw working
+20. Unique numbers generated
+21. Monthly execution logic
+22. Admin control for draw
+23. Simulation mode working
+24. Jackpot rollover logic
+25. Draw result publishing
+
+---
+
+## 💰 PRIZE LOGIC (5 checks)
+
+26. 40% / 35% / 25% split correct
+27. Multi-winner split correct
+28. Prize pool calculation accurate
+29. Rollover applied correctly
+30. No rounding issues
+
+---
+
+## ❤️ CHARITY SYSTEM (6 checks)
+
+31. Charity selection at signup
+32. Min 10% validation
+33. Custom % working
+34. Donation tracking
+35. Charity listing page
+36. Featured charity UI
+
+---
+
+## 🧾 WINNER SYSTEM (5 checks)
+
+37. File upload working
+38. Cloudinary integration
+39. Admin approval/rejection
+40. Payment status tracking
+41. Proof validation
+
+---
+
+## 👨‍💼 ADMIN PANEL (7 checks)
+
+42. User management working
+43. Score editing working
+44. Subscription management
+45. Draw management
+46. Charity CRUD
+47. Winner verification UI
+48. Analytics dashboard
+
+---
+
+## 📊 USER DASHBOARD (6 checks)
+
+49. Subscription status visible
+50. Score entry/edit working
+51. Charity info shown
+52. Draw participation data
+53. Winnings overview
+54. Clean UI/UX
+
+---
+
+## 🎨 UI/UX (5 checks)
+
+55. Modern premium design
+56. No golf cliché UI
+57. Responsive design
+58. Smooth animations
+59. Strong CTA
+
+---
+
+## ⚙️ BACKEND QUALITY (4 checks)
+
+60. Clean folder structure
+61. Proper error handling
+62. Validation middleware
+63. Secure APIs
+
+---
+
+## ⚡ PERFORMANCE (3 checks)
+
+64. Fast API response
+65. No unnecessary re-renders
+66. Optimized queries
+
+---
+
+## 🔒 SECURITY (3 checks)
+
+67. Rate limiting
+68. Helmet.js used
+69. Input sanitization
+
+---
+
+## 🧪 TESTING (3 checks)
+
+70. Basic unit tests exist
+71. API tested
+72. Edge cases tested
+
+---
+
+## 🚀 DEPLOYMENT (4 checks)
+
+73. Frontend deployed
+74. Backend deployed
+75. Env variables correct
+76. No hardcoded secrets
+
+---
+
+# 📋 STEP 3: RESULT REPORT
+
+Generate:
+
+### ✅ Fully Correct
+
+### ⚠️ Needs Improvement
+
+### ❌ Missing
+
+---
+
+# 🛠️ STEP 4: FIX EVERYTHING
+
+For ALL ❌ and ⚠️:
+
+* Provide FULL FIXED CODE
+* Mention file name
+* Mention exact change
+
+---
+
+# 🚀 STEP 5: FINAL VALIDATION
+
+Confirm:
+
+✔ Project runs without error
+✔ All APIs working
+✔ All PRD features implemented
+✔ UI matches requirements
+✔ Ready for submission
+
+---
+
+# 🎯 FINAL OUTPUT FORMAT:
+
+1. Audit Report
+2. Missing Features
+3. Fixes (code)
+4. Final Score (/100)
+
+---
+
+# 🔥 FINAL GOAL:
+
+Transform this project into:
+
+👉 100/100 SCORING PROJECT
+👉 PRODUCTION READY
+👉 INTERVIEW LEVEL PRODUCT
+
+---
+
+Now start with STEP 1.
